@@ -34,11 +34,17 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.gerenvip.messenger</groupId>-->
+            <!--<artifactId>messenger-platform-sdk</artifactId>-->
+            <!--<version>1.0.0</version>-->
+            <!--<scope>compile</scope>-->
+        <!--</dependency>-->
+
         <dependency>
-            <groupId>com.gerenvip.messenger</groupId>
+            <groupId>com.github.gerenvip</groupId>
             <artifactId>messenger-platform-sdk</artifactId>
-            <version>1.0.0</version>
-            <scope>compile</scope>
+            <version>1.0.1</version>
         </dependency>
 
         <dependency>
@@ -62,4 +68,10 @@
         </plugins>
     </build>
 
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://www.jitpack.io</url>
+        </repository>
+    </repositories>
 </project>

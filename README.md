@@ -20,13 +20,12 @@ Add repository
 Add dependency  
 
 ```xml
-<dependency>
-  <groupId>com.gerenvip.messenger</groupId>
-  <artifactId>messenger-platform-sdk</artifactId>
-  <version>1.0.0</version>
-</dependency>
+ <dependency>
+            <groupId>com.github.gerenvip</groupId>
+            <artifactId>messenger-platform-sdk</artifactId>
+            <version>1.0.1</version>
+ </dependency>
 ```
-
 Use in Code  
 
 Start with FMClient instance, get FMClient instance in FMClicent.getInstance().
