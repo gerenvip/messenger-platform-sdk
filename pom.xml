@@ -10,6 +10,7 @@
     <version>1.0.0</version>
     <modules>
         <module>messenger-platform-sdk</module>
+        <module>sample</module>
     </modules>
 
 
