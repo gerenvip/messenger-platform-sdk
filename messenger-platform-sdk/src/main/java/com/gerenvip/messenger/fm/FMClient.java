@@ -36,8 +36,6 @@ import com.gerenvip.messenger.fm.handler.*;
 import com.gerenvip.messenger.fm.handler.message.*;
 import com.gerenvip.messenger.fm.handler.message.builtin.*;
 import com.gerenvip.messenger.fm.provider.FMProvider;
-import com.sun.istack.internal.NotNull;
-import com.sun.istack.internal.Nullable;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
@@ -90,7 +88,7 @@ public class FMClient {
      * @param accessToken  在 Facebook 开发者后台 获取 Facebook Page 的 accessToken
      * @return FMClient
      */
-    public FMClient config(@NotNull String accessSecret, String accessToken) {
+    public FMClient config(String accessSecret, String accessToken) {
         this.accessSecret = accessSecret;
         this.accessToken = accessToken;
         return this;
@@ -101,7 +99,7 @@ public class FMClient {
      *
      * @param defaultCommand
      */
-    public void setDefaultCommand(@Nullable AbsDefaultCommand defaultCommand) {
+    public void setDefaultCommand(AbsDefaultCommand defaultCommand) {
         FMCommandInvoker.getInstance().put(defaultCommand == null ? new FMDefaultCommand() : defaultCommand);
     }
 

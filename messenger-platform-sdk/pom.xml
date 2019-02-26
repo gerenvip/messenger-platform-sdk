@@ -165,4 +165,11 @@
             </distributionManagement>
         </profile>
     </profiles>
+    <repositories>
+        <repository>
+            <id>maven</id>
+            <name>maven</name>
+            <url>http://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
 </project>
